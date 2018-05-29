@@ -30,7 +30,8 @@ def printer(attendees)
       # binding.pry
       puts name
     end
-    # attendees.each_index do |speaker|
-    #   puts assign_rooms(attendees)
-    # end
+    assignment = assign_rooms(attendees)
+    assignment.each_index do |index|
+      puts index
+    end
 end
